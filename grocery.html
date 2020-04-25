@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<title>Grocery Shopping</title>
+<head>
+  <link rel="stylesheet" href="grocery.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- upper navigation drawer -->
+  <div class="navbar"> 
+    <a href="#"><i class="fa fa-home" style="font-size:28px"></i></a>
+    <a href="grocery.html">Grocery Mart</a>
+    <a href="product.html">Product</a>
+    <a href="categories.html">Categories</a>
+    <a href="services.html">Services</a>
+    <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:20px"></i>                   Cart</a>
+    <a href="register.html"><i class="fa fa-sign-in" style="font-size:20px" ></i>            Login / SignUp</a>
+    
+  </div>
+ <br><br><br>
+ <!-- slideview -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+        <div class="w3-display-container w3-container">
+          <img src="photos/Untitled design (3).jpg" alt="Jeans" style="width:1290px" height="500">
+          <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+           <h1 class="w3-jumbo w3-hide-small" style="font-family: 'Times New Roman', Times, serif;">Fruits and Vegetables</h1>
+            <h1 class="w3-hide-large w3-hide-medium" style="font-family: 'Times New Roman', Times, serif;">Fruits and Vegetables</h1>
+            <h1 class="w3-hide-small" style="font-family: 'Times New Roman', Times, serif;"> get upto 50%off</h1><br><br>
+            <p><a href="" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+      </div></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+        <div class="w3-display-container w3-container">
+          <img src="photos/Untitled design (5).jpg" alt="Jeans" style="width:1290px" height="500">
+          <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+            <h1 class="w3-jumbo w3-hide-small" style="font-family: 'Times New Roman', Times, serif;">beverags</h1>
+            <h1 class="w3-hide-large w3-hide-medium" style="font-family: 'Times New Roman', Times, serif;">Beveragess</h1>
+            <h1 class="w3-hide-small" style="font-family: 'Times New Roman', Times, serif;"> get upto 50%off</h1><br><br>
+            <p><a href="" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p><br><br>
+      </div></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+        <div class="w3-display-container w3-container">
+          <img src="photos/Untitled design (7).jpg" alt="Jeans" style="width:1290px" height="500">
+          <div class="w3-display-topleft w3-text-black" style="padding:24px 48px">
+            <h1 class="w3-jumbo w3-hide-small" style="font-family: 'Times New Roman', Times, serif;">Personal Hygiene</h1>
+            <h1 class="w3-hide-large w3-hide-medium" style="font-family: 'Times New Roman', Times, serif;">Personal Hygiene/h1>
+            <h1 class="w3-hide-small" style="font-family: 'Times New Roman', Times, serif;"> get upto 50%off</h1><br><br>
+            <p><a href="" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p><br><br>
+      </div></div>
+  </div>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+  }
+  </script><br>
+
+<br>
+<!-- introduction -->
+<div class = "about"><p style="font-size:30px">Welcome to grocery Mart </p><hr><p style="font-size:20px">You can buy fruits, vegetables, beverages, personal care products, household & all grocery items Online with Oristen Online Grocery Store Karnal. Download Oristen app and order all your daily essentials with click of a button and get them delivered at your doorstep with our trusted online grocery delivery service. Online Grocery shopping comes with lots of benefits. You can check out the complete article. Don’t forget to check our offer section for attractive offers. You can follow us on Facebook and Instagram also for daily attractive offers.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+  <!-- categories -->
+  <br><center><p style="font-size:30px;font-family: 'Times New Roman', Times, serif;">Explore By Categories</p></center><hr><br>
+  <div class="row1">
+    <div class="column1">
+      <div id="login-box0">
+        <div class="left0">
+          <br>
+          <center><p style="font-size: 30px;">Fruits and vegetables</p></center>
+          <hr>
+          <div class="row4">
+            <div class="column4">
+              <img src="photos/cat11.jpg" class = "image" alt="Snow" style="width:140px">
+            </div>
+            <div class="column4">
+              <img src="photos/cat12.jpg" class = "image" alt="Snow" style="width:136px">
+            </div>
+            <div class="column4">
+              <img src="photos/cat13.jpg" class = "image" alt="Snow" style="width:110px;height:142px" >
+            </div></div><br>
+            <center><img src="photos/cat13.jpg" class = "image" style="width: 360px;height:180px"></center>
+        </div></div>
+    </div>
+
+    <div class="column1">
+      <div id="login-box0">
+        <div class="left0">
+          <br>
+          
+        <center><p style="font-size: 30px;">Beauty and Hygiene</p></center><hr><div class="row2">
+          <div class="column2">
+            <img src="photos/cat51.jpg" class = "image" alt="Snow" style="width:200px">
+          </div>
+          <div class="column4">
+            <img src="photos/cat52.jpg" class = "image" alt="Snow" style="width:136px">
+          </div></div>
+          <center><img src="photos/cat53.webp" class = "image" style="width: 360px;height:160px"></center>
+          
+          </div></div>
+    </div>
+    <div class="column1">
+      <div id="login-box0">
+        <div class="left0"><br>
+            <center><p style="font-size: 30px;">Bakery and Dairy</p></center><hr><div class="row4">
+              <br>
+              <center><img src="photos/cat31.jpg" class = "image" style="width: 360px;height:280px"></center>
+            </div></div>
+    </div>
+</div><br><br>
+ <div class="row1">
+  <div class="column1">
+    <div id="login-box0">
+      <div class="left0">
+        <br>
+        <center><p style="font-size: 30px;">Snacks and branded foods</p></center><hr>
+          <center><img src="photos/cat41.jpg" class = "image" style="width: 360px;height:180px"></center><br>
+          <center><img src="photos/cat42.jpg" class = "image" style="width: 360px;height:160px"></center>
+      </div></div>
+  </div>
+  <div class="column1">
+    <div id="login-box0">
+      <div class="left0">
+        <br>
+        <center><p style="font-size: 30px;">Food grains,Oil and Masala</p></center><hr><div class="row2">
+            <div class="column2">
+              <img src="photos/cat21.jpg" class = "image" alt="Snow" style="width:190px">
+            </div>
+            <div class="column2">
+              <img src="photos/cat22.jpg" class = "image" alt="Snow" style="width:180px;height: 150px;">
+            </div></div><br>
+            <center><img src="photos/cat23.jpg" class = "image" style="width: 360px;height:180px"></center>
+        </div></div>
+  </div>
+  <div class="column1">
+    <div id="login-box0">
+      <div class="left0"><br>
+          
+          <center><p style="font-size: 30px;">Kitchen,Garden and pets</p></center><hr>
+          <center><img src="photos/cat61.jpg" class = "image" style="width: 360px;height:180px"></center><br><div class="row2">
+            <div class="column2">
+              <img src="photos/cat62.jpg" class = "image" alt="Snow" style="width:180px">
+            </div>
+            <div class="column4">
+              <img src="photos/cat63.jpg" class = "image" alt="Snow" style="width:180px">
+            </div></div><br>
+            
+          </div></div>
+  </div>
+</div>
+<br>
+<!-- Deals -->
+ <div class = "about1"><p style="font-size:30px">Deals That Will Interest You</p><hr><br>
+ 
+
+  <div class="pricing-wrapper clearfix">
+
+    <div class="pricing-table"><br>
+        <img src = "photos/offer1.jpg" width="315px">
+        <ul class="table-list">
+            <li><span>For our new customers</span></li>
+            <li><span>15% off on your first order</span></li>
+        </ul>
+        <div class="table-buy">
+            <a href="#" class="pricing-action">Place Order</a>
+        </div>
+    </div>
+    
+    <div class="pricing-table recommended">
+        <img src = "photos/off2.jpg" width="310px">
+        <ul class="table-list">
+            <li><span>For SBI users</span></li>
+            <li><span>10% off on all your orders</span></li>
+        </ul>
+        <div class="table-buy">
+            <a href="#" class="pricing-action">Place Order</a>
+        </div>
+    </div>
+
+    <div class="pricing-table">
+        <img src = "photos/off3.png" width="340px" height="230px">
+        <ul class="table-list">
+            <li><span>For paytm users</span></li>
+            <li><span>10% off on all your orders</span></li>
+        </ul>
+        <div class="table-buy">
+            <a href="#" class="pricing-action">Get Coupon</a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- brands -->
+ <div class = "about2"><p style="font-size:30px">Brands</p><hr>
+  <div class="row3">
+    <div class="column3">
+      <img src="photos/br1.png" alt="Snow" style="width:60%">
+    </div>
+    <div class="column3">
+      <img src="photos/br2.png" alt="Forest" style="width:60%">
+    </div>
+    <div class="column3">
+      <img src="photos/br3.jpg" alt="Mountains" style="width:30%">
+    </div>
+    <div class="column3">
+      <img src="photos/br4.png" alt="Forest" style="width:30%">
+    </div>
+    <div class="column3">
+      <img src="photos/br5.jpg" alt="Mountains" style="width:60%">
+    </div>
+  </div>
+  </div>
+  <br><br>
+  </body>
+  <!-- footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <i class="fa fa-shopping-cart" style="font-size:120px"></i>  
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Company Name INIESTA Webtech solution</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Office number 3,Third Floor</span>H-61 Sector Noida,Uttar Pradesh</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 9871428181</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">Iniestawebtech@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span> Iniesta Restro Grocery Market</span>
+        <span>Follow us on our social media pages:</span>
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/iniestawebtech/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/iniestawebtech/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/iniesta-webtech-solution-private-limited-111b82184/"><i class="fa fa-linkedin"></i></a>
+        
+      </div>
+
+    </div>
+
+  </footer>
+  </html>
